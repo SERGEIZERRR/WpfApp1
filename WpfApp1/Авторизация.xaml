@@ -5,12 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Практика"
         mc:Ignorable="d"
-        Title="Авторизация" Height="475" Width="800">
+        Title="Авторизация" Height="300" Width="400">
     <Grid>
 
         <Button Content="Присоединиться" 
                 HorizontalAlignment="Left" 
-                Margin="59,370,0,0" 
+                Margin="10,190,0,0" 
                 VerticalAlignment="Top" 
                 Height="40" 
                 Click="Button_Click_2" 
@@ -22,21 +22,23 @@
                 />
 
         <TextBox x:Name="TextBox1" 
-                 HorizontalAlignment="Left" 
-                 Margin="250,25,0,0" 
+                 Margin="160,20,0,0" 
                  TextWrapping="Wrap" 
-                 VerticalAlignment="Top" 
-                 Width="120" 
-                 Background="{x:Null}" 
+                 Background="Transparent" 
                  BorderBrush="Black" 
                  Foreground="Black" 
                  Text="DESKTOP-TCKRHQ6\GOVNO2" 
-                 Height="20"
+                 HorizontalAlignment="Left" 
+                 Width="150" 
+                 Height="30" 
+                 VerticalAlignment="Top"
+                 TextAlignment="Center"
+                 FontSize="10"
                  />
 
         <TextBox x:Name="TextBox2" 
                  HorizontalAlignment="Left" 
-                 Margin="474,237,0,0" 
+                 Margin="137,73,0,0" 
                  TextWrapping="Wrap" 
                  VerticalAlignment="Top" 
                  Width="120" 
@@ -48,7 +50,7 @@
 
         <TextBox x:Name="TextBox3" 
                  HorizontalAlignment="Left" 
-                 Margin="375,140,0,0" 
+                 Margin="98,104,0,0" 
                  TextWrapping="Wrap" 
                  VerticalAlignment="Top" 
                  Width="120" 
@@ -60,7 +62,7 @@
 
         <TextBox x:Name="TextBox4" 
                  HorizontalAlignment="Left" 
-                 Margin="84,165,0,0" 
+                 Margin="98,140,0,0" 
                  TextWrapping="Wrap" 
                  VerticalAlignment="Top" 
                  Width="120" 
@@ -72,9 +74,9 @@
 
         <Label Content="Имя сервера" 
                HorizontalAlignment="Left" 
-               Margin="6,14,0,0"
+               Margin="20,15,0,0"
                VerticalAlignment="Top" 
-               FontSize="16" 
+               FontSize="20" 
                FontWeight="Bold" 
                FontStyle="Normal" 
                Background="White" 
@@ -83,7 +85,7 @@
 
         <Label Content="Название БД" 
                HorizontalAlignment="Left" 
-               Margin="357,230,0,0" 
+               Margin="20,66,0,0" 
                VerticalAlignment="Top" 
                FontWeight="Bold" 
                FontSize="16" 
@@ -93,7 +95,7 @@
 
         <Label Content="Логин" 
                HorizontalAlignment="Left" 
-               Margin="312,127,0,0" 
+               Margin="30,97,0,0" 
                VerticalAlignment="Top" 
                FontSize="16" 
                FontWeight="Bold" 
@@ -102,7 +104,7 @@
 
         <Label Content="Пароль" 
                HorizontalAlignment="Left" 
-               Margin="10,158,0,0" 
+               Margin="24,133,0,0" 
                VerticalAlignment="Top" 
                FontSize="16" 
                FontWeight="Bold" 
@@ -112,7 +114,7 @@
 
         <Button Content="Очистить поля ввода" 
                 HorizontalAlignment="Left" 
-                Margin="209,370,0,0" 
+                Margin="10,235,0,0" 
                 VerticalAlignment="Top" 
                 Height="40" 
                 Width="175" 
@@ -123,7 +125,7 @@
                 Background="White" 
                 BorderBrush="Black"
                 />
-        <Button Name="Test_open" Content="Button" HorizontalAlignment="Left" Margin="736,416,0,0" VerticalAlignment="Top" Click="Test_open_Click"/>
+        <Button Name="Test_open" Content="Button" HorizontalAlignment="Left" Margin="157,202,0,0" VerticalAlignment="Top" Click="Test_open_Click"/>
 
     </Grid>
 </Window>

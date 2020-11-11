@@ -18,11 +18,11 @@
             <Border.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FF473418" Offset="1"/>
-                    <GradientStop Color="#FFF0A02E" Offset="0.4"/>
+                    <GradientStop Color="#FFF0A02E" Offset="0.635"/>
                 </LinearGradientBrush>
             </Border.Background>
 
-            <Expander IsExpanded="{Binding IsSelected, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ListBoxItem}}}"  Header="Menu" Margin="10,10,650,45">
+            <Expander IsExpanded="{Binding IsSelected, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ListBoxItem}}}"  Header="Меню" Margin="10,10,650,45">
 
                 <Border BorderThickness="1" BorderBrush="Black" Height="400" Width="100" HorizontalAlignment="Center" VerticalAlignment="Top" CornerRadius="10" >
 
@@ -30,14 +30,14 @@
 
                         <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                             <GradientStop Color="#FF473418" Offset="1"/>
-                            <GradientStop Color="#FFF0A02E" Offset="0.4"/>
+                            <GradientStop Color="#FFDA8D1E" Offset="0.657"/>
                         </LinearGradientBrush>
 
                     </Border.Background>
 
                     <Grid>
-                        <Button x:Name="Open_Autorize_Form" Content="Вход" Margin="0,10,0,0" Height="20" Width="80" HorizontalAlignment="Center" VerticalAlignment="Top" Click="Button_Click"/>
-                        <Button x:Name="Close_All" Content="Выход" Margin="0,0,0,10" Height="20" Width="80" HorizontalAlignment="Center" VerticalAlignment="Bottom" Click="Close_All_Click"/>
+                        <Button x:Name="Open_Autorize_Form" Content="Вход" Margin="0,10,0,0" Height="20" Width="80" HorizontalAlignment="Center" VerticalAlignment="Top" Click="Button_Click" Background="Transparent"/>
+                        <Button x:Name="Close_All" Content="Выход" Margin="0,0,0,10" Height="20" Width="80" HorizontalAlignment="Center" VerticalAlignment="Bottom" Click="Close_All_Click" Background="Transparent"/>
 
                     </Grid>
                 </Border>
