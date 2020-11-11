@@ -5,19 +5,45 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" WindowStyle="SingleBorderWindow">
+        Title="MainWindow"
+        Height="500" 
+        Width="800" 
+        WindowStyle="None" 
+        Background="Transparent"
+        AllowsTransparency="True">
+
     <Grid>
-        <Button Content="Нажми если хочешь fisting so fucking deep" HorizontalAlignment="Left" Margin="250,159,0,0" VerticalAlignment="Top" Click="Button_Click" Height="95" Width="315" FontFamily="Stencil" FontWeight="Bold" FontStyle="Italic" BorderBrush="{x:Null}" Foreground="Black">
-            <Button.Background>
+        <Border BorderBrush="LightGray" BorderThickness="5" CornerRadius="10">
+
+            <Border.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="Black" Offset="0"/>
-                    <GradientStop Color="#FF999999" Offset="0.687"/>
+                    <GradientStop Color="#FF473418" Offset="1"/>
+                    <GradientStop Color="#FFF0A02E" Offset="0.4"/>
                 </LinearGradientBrush>
-            </Button.Background>
-            <Button.Effect>
-                <DropShadowEffect/>
-            </Button.Effect>
-        </Button>
+            </Border.Background>
+
+            <Expander IsExpanded="{Binding IsSelected, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ListBoxItem}}}"  Header="Menu" Margin="10,10,650,45">
+
+                <Border BorderThickness="1" BorderBrush="Black" Height="400" Width="100" HorizontalAlignment="Center" VerticalAlignment="Top" CornerRadius="10" >
+
+                    <Border.Background>
+
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FF473418" Offset="1"/>
+                            <GradientStop Color="#FFF0A02E" Offset="0.4"/>
+                        </LinearGradientBrush>
+
+                    </Border.Background>
+
+                    <Grid>
+                        <Button x:Name="Open_Autorize_Form" Content="Вход" Margin="0,10,0,0" Height="20" Width="80" HorizontalAlignment="Center" VerticalAlignment="Top" Click="Button_Click" >
+
+                        </Button>
+                    </Grid>
+                </Border>
+            </Expander>
+
+        </Border>
 
     </Grid>
 </Window>

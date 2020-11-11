@@ -37,9 +37,6 @@
 
                     <Grid>
 
-
-                        <Button x:Name="B1" Margin="10,10,10,0" Height="20" VerticalAlignment="Top" Content="afaff" BorderBrush="Black" BorderThickness="1" Background="{x:Null}"  />
-
                     </Grid>
                 </Border>
             </Expander>
