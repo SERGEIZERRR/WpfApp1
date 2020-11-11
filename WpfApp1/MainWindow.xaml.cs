@@ -32,5 +32,10 @@ namespace WpfApp1
             авторизация.Show();
             this.Close();
         }
+
+        private void Close_All_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
     }
 }
